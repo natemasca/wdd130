@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Wrapper */
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('../images/country.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #3a2e1a;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+#wrapper {
+    background-color: white;
+    background-image: url(../images/country2.jpg);
+    background-size: cover;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+    max-width: 1100px;
+
+}
+
+/* Navigation buttons in corners */
+nav {
+    position: relative;
+    height: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    position: absolute;
+    background-color: #8c6d43;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+nav li:hover {
+    background-color: #a87f50;
+}
+
+nav li:nth-child(1) { top: 10px; left: 10px; }
+nav li:nth-child(2) { top: 10px; right: 10px; }
+nav li:nth-child(3) { bottom: 10px; left: 10px; }
+nav li:nth-child(4) { bottom: 10px; right: 10px; }
+
+/* Main Hover Effect */
+main {
+    font-size: 1.1rem;              /* Slightly larger text */
+    padding: 2.5rem;                /* More internal spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.96); /* Optional: make it subtly pop */
+    border-radius: 12px;
+
+}
+
+main:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #5c3d1e;
+}
+
+/* Father's Day Image Styling */
+main img {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin: 0 1.5rem 1rem 0;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 0.5rem;
+    color: #4a361a;
+    border-bottom: 2px solid #c8a165;
+    padding-bottom: 0.3rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #aaa;
+    font-style: italic;
+    color: #2c2b2b;
+    font-size: 0.95rem;
+    clear: both; /* ensures footer doesn't float around the image */
+}
