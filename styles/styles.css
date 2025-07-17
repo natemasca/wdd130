@@ -1,0 +1,93 @@
+/* Layout */
+.wrapper {
+    text-align: center;
+}
+
+body {
+    background-color: #CFE0C3;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+/* Header & Logo */
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* Navigation */
+nav {
+    background-color: #40798C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+nav a {
+    background-color: #70A9A1;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #9EC1A3;
+}
+
+
+.projects h2 {
+    text-align: center;
+}
+
+.squares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+}
+
+.squares img {
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.topia {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: #40798C;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
